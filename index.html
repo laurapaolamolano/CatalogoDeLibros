@@ -6,17 +6,18 @@
     <title>Librería Universitaria Nexus │ Coworking</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="icon" href="imagenes/favicon.png" type="image/png">
 </head>
 <body>
 
 <! Banda de mensaje especial -->
 <div id="announcement-bar" class="bg-primary text-white text-center py-2">
     <div class="container">
-        <p class="m-0"> 🔥 <strong>Descuentos especiales </strong> del 1 al 30 de abril 🔥 <a href="#">Ver más</a></p>
+        <p class="m-0"> 🔥 <strong>Descuentos especiales </strong> del 1 al 30 de abril 🔥</p>
     </div>
 </div>
 
-<! Menú + sección de íconos -->
+<! Menú -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
         <a class="navbar-brand" href="index.html">
@@ -25,29 +26,52 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse justify-content-center justify-content-lg-center" id="navbarNavDropdown">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Categorías
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Artes</a></li>
+                        <li><a class="dropdown-item" href="#">Biografías</a></li>
+                        <li><a class="dropdown-item" href="#">Ciencias</a></li>
+                        <li><a class="dropdown-item" href="#">Comics</a></li>
+                        <li><a class="dropdown-item" href="#">Deportes y ocio</a></li>
+                        <li><a class="dropdown-item" href="#">Derecho</a></li>
+                        <li><a class="dropdown-item" href="#">Desarrollo personal</a></li>
+                        <li><a class="dropdown-item" href="#">Economía y finazas</a></li>
+                        <li><a class="dropdown-item" href="#">Emprendimiento</a></li>
+                        <li><a class="dropdown-item" href="#">Ficción</a></li>
+                        <li><a class="dropdown-item" href="#">Filosofía y religión</a></li>
+                        <li><a class="dropdown-item" href="#">Historia</a></li>
+                        <li><a class="dropdown-item" href="#">Infantiles</a></li>
+                        <li><a class="dropdown-item" href="#">Lenguaje</a></li>
+                        <li><a class="dropdown-item" href="#">Matemática</a></li>
+                        <li><a class="dropdown-item" href="#">Procesos</a></li>
+                        <li><a class="dropdown-item" href="#">Salud</a></li>
+                        <li><a class="dropdown-item" href="#">Sociedad</a></li>
+                        <li><a class="dropdown-item" href="#">Tecnología e ingeniería</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Catálogo de libros
+                    <a class="nav-link px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Los más vendidos
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        De interés
+                    <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Más
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Eventos</a></li>
                         <li><a class="dropdown-item" href="#">Coworking</a></li>
                         <li><a class="dropdown-item" href="#">Grupos de lectura</a></li>
-                        <li><a class="dropdown-item" href="#">Donar un libro</a></li>
+                        <li><a class="dropdown-item" href="#">Donar libros</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contáctanos</a>
+                    <a class="nav-link px-3" href="#">Contáctanos</a>
                 </li>
             </ul>
         </div>
@@ -64,21 +88,27 @@
         </div>
     </div>
 </nav>
+<style>
+    .dropdown-menu {
+        max-height: 300px;
+        overflow-y: auto;
+    }
+</style>
 
 <! Banner principal -->
 <div class="container pt-0">
     <div class="row align-items-center">
-        <div class="col-12 col-md-6 order-2 order-md-1">
+        <div class="col-12 col-md-7 text-center text-md-start">
             <div class="text-left">
-                <h1 class="fs-1">Bienvenido a tu<br>librería universitaria favorita</h1>
-                <p class="fs-5">Descubre un mundo de conocimiento y creatividad en nuestra librería. Ofrecemos una amplia selección de libros, espacios de coworking y una cafetería acogedora para que disfrutes mientras estudias.</p>
+                <h1 class="fs-1 mt-5 mt-md-0"><strong>Bienvenido a tu<br>librería universitaria favorita</strong></h1>
+                <p class="fs-5 mt-4">Descubre un mundo de conocimiento y creatividad en nuestra librería. Ofrecemos una amplia selección de libros, espacios de coworking y una cafetería acogedora para que disfrutes mientras estudias.</p>
                 <div class="mt-4">
-                    <a href="#" class="btn btn-primary">Explorar libros</a>
-                    <a href="#" class="btn btn-outline-primary">Reservar un espacio</a>
+                    <a href="#" class="btn btn-primary">Ver catálogo de libros</a>
+                    <a href="#" class="btn btn-outline-primary">Suscribirme</a>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6 order-1 order-md-2">
+        <div class="col-12 col-md-5 text-md-right pb-0 mb-0 mt-5">
             <div class="text-right">
                 <img src="imagenes/libreria-universitaria-nexus.png" class="img-fluid" alt="Imagen">
             </div>
@@ -86,14 +116,87 @@
     </div>
 </div>
 
-<! Banda de mensaje especial -->
+<! Sección Novedades -->
+<div class=" text-white pt-5 pb-4 mt-0" style="background-color: #031633;">
+    <div class="container">
+        <h2 class="text-center mb-6">Novedades del mes</h2>
+        <p class="text-center fs-6 mt-2">Nuevas historias, nuevas aventuras, nuevas emociones. Este mes, déjate sorprender por nuestras novedades literarias</p>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+            <div class="col">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+<! Catálogo de libros -->
 
-<! Banda de mensaje especial -->
+<! También te puede interesar -->
 
+<! Footer -->
+<footer class="text-white pt-5 pb-4 mt-6" style="background-color: #031633;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3 text-center text-md-start mb-4 mb-md-0">
+                <a class="d-inline-flex align-items-center mb-2 text-body-secondary text-decoration-none">
+                    <img src="imagenes/nexus-logo-footer.png" alt="Bootstrap" width="150" height="75">
+                </a>
+            </div>
+            <div class="col-12 col-md-3 text-center mb-4 mb-md-0">
+                <h5 class="fs-6">De interés</h5>
+                <ul class="list-unstyled small">
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Ver catálogo</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Newsletter</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Nuestras sedes</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3 text-center mb-4 mb-md-0">
+                <h5 class="fs-6">Contáctanos</h5>
+                <ul class="list-unstyled small">
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Ayuda</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Donar libros</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Membresías</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3 text-center">
+                <h5 class="fs-6">Síguenos</h5>
+                <ul class="list-inline small">
+                    <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="text-center mb-2 fw-lighter small">© 2024 Librería Universitaria Nexus. Todos los derechos reservados.</p>
+    </div>
+</footer>
 
-
-<! Banda de mensaje especial -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
