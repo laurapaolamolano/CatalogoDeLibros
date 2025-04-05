@@ -10,15 +10,9 @@
 </head>
 <body>
 
-<! Banda de mensaje especial -->
-<div id="announcement-bar" class="bg-primary text-white text-center py-2">
-    <div class="container">
-        <p class="m-0"> 🔥 <strong>Descuentos especiales </strong> del 1 al 30 de abril 🔥</p>
-    </div>
-</div>
 
 <! Menú -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav id="main-nav" class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="z-index: 1030;">
     <div class="container">
         <a class="navbar-brand" href="index.html">
             <img src="imagenes/nexus-logo.png" alt="Bootstrap" width="150" height="75">
@@ -92,11 +86,19 @@
     .dropdown-menu {
         max-height: 300px;
         overflow-y: auto;
+        z-index: 1031; /* Asegura que el dropdown esté por encima de la barra de mensaje */
     }
 </style>
 
+<! Banda de mensaje especial -->
+<div id="announcement-bar" class="bg-primary text-white text-center py-2 fixed-top" style="top: 100px; z-index: 1020;">
+    <div class="container">
+        <p class="m-0"> 🔥 <strong>Descuentos especiales </strong> del 1 al 30 de abril 🔥</p>
+    </div>
+</div>
+
 <! Banner principal -->
-<div class="container pt-0">
+<div class="container pt-0" style="padding-top: 121px;">
     <div class="row align-items-center">
         <div class="col-12 col-md-7 text-center text-md-start">
             <div class="text-left">
@@ -116,20 +118,31 @@
     </div>
 </div>
 
+<style>
+    body {
+        padding-top: 121px; /* Ajuste para la altura de la banda y el menú */
+    }
+</style>
+
 <! Sección Novedades -->
 <div class="text-white pt-4 pb-4 mt-0" style="background-color: #031633;">
     <div class="container mt-4 mb-4">
         <h2 class="text-center mt-8">Novedades del mes</h2>
         <p class="text-center fs-6 mt-2">Nuevas historias, nuevas aventuras, nuevas emociones. Este mes, déjate sorprender por nuestras novedades literarias</p>
-        <div class="row row-cols-1 row-cols-md-5 g-4 mt-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 g-4 mt-4">
             <div class="col">
                 <div class="card">
                     <img src="imagenes/novedades-nexus.jpg" class="img-fluid" alt="Imagen">
                     <div class="card-body">
-                        <h5 class="card-title">Nexus</h5>
-                        <p class="card-text small">Una breve historia de las redes de información desde la Edad de Piedra hasta la IA.</p>
-                        <div class="mt-4">
-                            <a href="#" class="btn btn-primary btn-sm">Ver más</a>
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title m-0">Nexus</h5>
+                            <a href="#" class=""><i class="bi bi-heart"></i></a>
+                        </div>
+                        <p class="card-text">Historia de las redes de información desde la Edad de Piedra hasta la IA.</p>
+                        <h5 class="card-title">$65.000</h5>
+                        <div class="mt-3 d-sm-flex gap-sm-2">
+                            <a href="#" class="btn btn-primary w-100 w-sm-auto mb-2 mb-sm-0">Comprar</a>
+                            <a href="#" class="btn btn-outline-primary w-100 w-sm-auto">Ver detalle</a>
                         </div>
                     </div>
                 </div>
@@ -138,10 +151,15 @@
                 <div class="card">
                     <img src="imagenes/novedades-1929.jpg" class="img-fluid" alt="Imagen">
                     <div class="card-body">
-                        <h5 class="card-title">1929</h5>
-                        <p class="card-text small">La historia interna de la mayor caída en la historia de Wall Street.</p>
-                        <div class="mt-4">
-                            <a href="#" class="btn btn-primary btn-sm">Ver más</a>
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title m-0">1929</h5>
+                            <a href="#" class=""><i class="bi bi-heart"></i></a>
+                        </div>
+                        <p class="card-text">La historia interna de la mayor crísis en la historia de Wall Street.</p>
+                        <h5 class="card-title">$75.000</h5>
+                        <div class="mt-3 d-sm-flex gap-sm-2">
+                            <a href="#" class="btn btn-primary w-100 w-sm-auto mb-2 mb-sm-0">Comprar</a>
+                            <a href="#" class="btn btn-outline-primary w-100 w-sm-auto">Ver detalle</a>
                         </div>
                     </div>
                 </div>
@@ -150,10 +168,15 @@
                 <div class="card">
                     <img src="imagenes/novedades-mark-twain.jpg" class="img-fluid" alt="Imagen">
                     <div class="card-body">
-                        <h5 class="card-title">Mark Twain</h5>
-                        <p class="card-text small">La vida del escritor considerado el padre de la literatura estadounidense.</p>
-                        <div class="mt-4">
-                            <a href="#" class="btn btn-primary btn-sm">Ver más</a>
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title m-0">Mark Twain</h5>
+                            <a href="#" class=""><i class="bi bi-heart"></i></a>
+                        </div>
+                        <p class="card-text">La vida del escritor considerado el padre de la literatura estadounidense.</p>
+                        <h5 class="card-title">$89.000</h5>
+                        <div class="mt-3 d-sm-flex gap-sm-2">
+                            <a href="#" class="btn btn-primary w-100 w-sm-auto mb-2 mb-sm-0">Comprar</a>
+                            <a href="#" class="btn btn-outline-primary w-100 w-sm-auto">Ver detalle</a>
                         </div>
                     </div>
                 </div>
@@ -162,10 +185,15 @@
                 <div class="card">
                     <img src="imagenes/novedades-heroes.jpg" class="img-fluid" alt="Imagen">
                     <div class="card-body">
-                        <h5 class="card-title">Heroes</h5>
-                        <p class="card-text small">Redescubre la emoción y la grandeza desenfrenada de los mitos griegos.</p>
-                        <div class="mt-4">
-                            <a href="#" class="btn btn-primary btn-sm">Ver más</a>
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title m-0">Heroes</h5>
+                            <a href="#" class=""><i class="bi bi-heart"></i></a>
+                        </div>
+                        <p class="card-text">Redescubre la emoción y la grandeza desenfrenada de los mitos griegos.</p>
+                        <h5 class="card-title">$49.000</h5>
+                        <div class="mt-3 d-sm-flex gap-sm-2">
+                            <a href="#" class="btn btn-primary w-100 w-sm-auto mb-2 mb-sm-0">Comprar</a>
+                            <a href="#" class="btn btn-outline-primary w-100 w-sm-auto">Ver detalle</a>
                         </div>
                     </div>
                 </div>
@@ -174,10 +202,66 @@
                 <div class="card">
                     <img src="imagenes/novedades-into-the-ice.jpg" class="img-fluid" alt="Imagen">
                     <div class="card-body">
-                        <h5 class="card-title">En el hielo</h5>
-                        <p class="card-text small">El Paso del Noroeste, el Sol Polar y un misterio de 175 años, por Mark Synnott.</p>
-                        <div class="mt-4">
-                            <a href="#" class="btn btn-primary btn-sm">Ver más</a>
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title m-0">En el hielo</h5>
+                            <a href="#" class=""><i class="bi bi-heart"></i></a>
+                        </div>
+                        <p class="card-text">El Paso del Noroeste, el Sol Polar y un misterio de 175 años, por Mark Synnott.</p>
+                        <h5 class="card-title">$49.000</h5>
+                        <div class="mt-3 d-sm-flex gap-sm-2">
+                            <a href="#" class="btn btn-primary w-100 w-sm-auto mb-2 mb-sm-0">Comprar</a>
+                            <a href="#" class="btn btn-outline-primary w-100 w-sm-auto">Ver detalle</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="imagenes/novedades-habitos-atomicos.jpg" class="img-fluid" alt="Imagen">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title m-0">Hábitos atómicos</h5>
+                            <a href="#" class=""><i class="bi bi-heart"></i></a>
+                        </div>
+                        <p class="card-text">Un método comprobado para desarrollar buenos hábitos y eliminar los malos.</p>
+                        <h5 class="card-title">$35.000</h5>
+                        <div class="mt-3 d-sm-flex gap-sm-2">
+                            <a href="#" class="btn btn-primary w-100 w-sm-auto mb-2 mb-sm-0">Comprar</a>
+                            <a href="#" class="btn btn-outline-primary w-100 w-sm-auto">Ver detalle</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="imagenes/novedades-metafisica.jpg" class="img-fluid" alt="Imagen">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title m-0">Metafísica 4 en 1</h5>
+                            <a href="#" class=""><i class="bi bi-heart"></i></a>
+                        </div>
+                        <p class="card-text">Tome el control de su vida manejando su poder interior, mientras su salud incrementa.</p>
+                        <h5 class="card-title">$78.000</h5>
+                        <div class="mt-3 d-sm-flex gap-sm-2">
+                            <a href="#" class="btn btn-primary w-100 w-sm-auto mb-2 mb-sm-0">Comprar</a>
+                            <a href="#" class="btn btn-outline-primary w-100 w-sm-auto">Ver detalle</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="imagenes/novedades-quicksilver.jpg" class="img-fluid" alt="Imagen">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title m-0">Quicksilver</h5>
+                            <a href="#" class=""><i class="bi bi-heart"></i></a>
+                        </div>
+                        <p class="card-text">En el desierto implacable, no hay mucho que una chica no haría por un vaso de agua.</p>
+                        <h5 class="card-title">$65.000</h5>
+                        <div class="mt-3 d-sm-flex gap-sm-2">
+                            <a href="#" class="btn btn-primary w-100 w-sm-auto mb-2 mb-sm-0">Comprar</a>
+                            <a href="#" class="btn btn-outline-primary w-100 w-sm-auto">Ver detalle</a>
                         </div>
                     </div>
                 </div>
@@ -186,6 +270,7 @@
     </div>
 </div>
 
+<! Sección Catálogo -->
 <div class="$blue-100 pt-4 pb-4 mt-0">
     <div class="container mt-5">
         <h2 class="text-center mt-8">Nuestro catálogo</h2>
