@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Librería Universitaria Nexus │ Pago y envío </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="icon" href="imagenes/favicon.png" type="image/png">
+</head>
+<body>
+
+<! Menú -->
+<nav id="main-nav" class="navbar navbar-expand-lg fixed-top " style="z-index: 1030; background-color: #FFE135;">
+    <div class="container">
+        <a class="navbar-brand ms-1 ms-lg-0" href="index.html">
+            <img src="imagenes/nexus-logo.png" alt="Bootstrap" width="80" height="80">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center justify-content-lg-around align-items-center fs-6 mt-2 mt-lg-0 mb-2 mb-lg-0" id="navbarNavDropdown">
+            <div class="navbar-nav">
+                <div class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link px-2 px-lg-4" href="index.html"><strong>Inicio</strong></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Categorías</strong></a>
+                        <ul class="dropdown-menu fs-6">
+                            <li><a class="dropdown-item" href="404.html">Artes</a></li>
+                            <li><a class="dropdown-item" href="404.html">Biografías</a></li>
+                            <li><a class="dropdown-item" href="404.html">Ciencias</a></li>
+                            <li><a class="dropdown-item" href="404.html">Comics</a></li>
+                            <li><a class="dropdown-item" href="404.html">Deportes y ocio</a></li>
+                            <li><a class="dropdown-item" href="404.html">Derecho</a></li>
+                            <li><a class="dropdown-item" href="404.html">Desarrollo personal</a></li>
+                            <li><a class="dropdown-item" href="404.html">Economía y finazas</a></li>
+                            <li><a class="dropdown-item" href="404.html">Emprendimiento</a></li>
+                            <li><a class="dropdown-item" href="404.html">Ficción</a></li>
+                            <li><a class="dropdown-item" href="404.html">Filosofía y religión</a></li>
+                            <li><a class="dropdown-item" href="404.html">Historia</a></li>
+                            <li><a class="dropdown-item" href="404.html">Infantiles</a></li>
+                            <li><a class="dropdown-item" href="404.html">Lenguaje</a></li>
+                            <li><a class="dropdown-item" href="404.html">Matemática</a></li>
+                            <li><a class="dropdown-item" href="404.html">Procesos</a></li>
+                            <li><a class="dropdown-item" href="404.html">Salud</a></li>
+                            <li><a class="dropdown-item" href="404.html">Sociedad</a></li>
+                            <li><a class="dropdown-item" href="404.html">Tecnología e ingeniería</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2 px-lg-4" href="404.html"><strong>Blog</strong></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Más</strong></a>
+                        <ul class="dropdown-menu fs-6">
+                            <li><a class="dropdown-item" href="404.html">Eventos</a></li>
+                            <li><a class="dropdown-item" href="404.html">Coworking</a></li>
+                            <li><a class="dropdown-item" href="404.html">Grupos de lectura</a></li>
+                            <li><a class="dropdown-item" href="404.html">Donar libros</a></li>
+                            <li><a class="dropdown-item" href="404.html">Merch</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2 px-lg-4" href="contacto.html"><strong>Contáctanos</strong></a>
+                    </li>
+                </div>
+            </div>
+            <form class=" d-none d-lg-flex flex-grow-1 flex-lg-grow-0 ms-lg-2 mt-3 mt-lg-0" role="search" style="width: 400px;">
+                <div class="input-group">
+                    <input type="search" class="form-control" style="border-color: black; box-shadow: none;" placeholder="Autor, Título o Categoría" aria-label="Buscar">
+                    <button class="btn btn-outline-dark" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="d-none d-lg-flex align-items-center">
+            <a href="carrito.html" class="p-2 mx-2 text-dark fs-4">
+                <i class="bi bi-cart"></i>
+            </a>
+            <a href="404.html" class="p-2 mx-2 text-dark fs-4">
+                <i class="bi bi-person"></i>
+            </a>
+        </div>
+    </div>
+</nav>
+<style>
+    .dropdown-menu {
+        max-height: 300px;
+        overflow-y: auto;
+        z-index: 1031;
+    }
+
+    body {
+        padding-top: 80px; /* Ajustar a la altura del menú en desktop */
+    }
+
+    @media (max-width: 991.98px) { /* Para pantallas más pequeñas que lg */
+        body {
+            padding-top: **[AQUÍ DEBE IR LA ALTURA DEL MENÚ DESPLEGADO EN MOBILE]**;
+        }
+    }
+</style>
+
+<! Banda de mensaje especial -->
+<div id="announcement-bar" class=" text-white text-center py-3 mt-4" style="z-index: 1020; background-color: black;">
+    <div class="container">
+        <p class="m-0"> 🚀 <strong>ENVÍOS GRATIS </strong> por compras superiores a <strong>$100.000</strong> 🔥</p>
+    </div>
+</div>
+
+<! Contenido detalle Título 1929 -->
+<div class="pt-3 pb-0 mt-0 px-0">
+    <div class="container py-5">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item small"><a href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item small"><a href="404.html">Economía y finanzas</a></li>
+                <li class="breadcrumb-item active small" aria-current="page">1929</li>
+            </ol>
+        </nav>
+        <div class="container pt-4 px-0">
+            <div class="row">
+                <div class="col-sm-4 col-md-3 d-flex justify-content-center">
+                    <img src="imagenes/novedades-1929.jpg" class="img-fluid rounded-top rounded-md-start mx-auto" style="max-width: 300px;" alt="Image">
+                </div>
+                <div class="col-sm.8 col-md-10">
+                    <div class="card h-100 border-0">
+                        <div class="card-body pb-4">
+                            <h1 class="text-center text-md-start mb-0 pb-4 py-0">1929</h1>
+                            <p class="text-center text-md-start"><strong>Autor:<br></strong>Andrew Ross Sorkin</p>
+                            <p class="text-center text-md-start"><strong>Categoría:<br></strong>Economía y finanzas</p>
+                            <p class="text-center text-md-start"><strong>Precio:<br></strong>$75.000</p>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Abstracto
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Esta no es solo una historia sobre dinero. 1929 es una historia de poder, psicología y la seductora ilusión de que "esta vez es diferente". Trata sobre señales de alarma ignoradas, financieros que cayeron en desgracia y escépticos que vieron venir la crisis, solo para ser descartados hasta que fue demasiado tarde. Aclamado como un libro histórico, Too Big to Fail reinventó cómo se cuentan las crisis financieras. Ahora, con 1929 , Sorkin ofrece un relato inmersivo y electrizante del colapso bursátil más crucial de todos los tiempos, con lecciones que siguen siendo tan urgentes como siempre. Más que una simple historia, 1929 es un modelo crucial para comprender los ciclos de especulación, las fuerzas que impulsan la agitación financiera y las señales de advertencia que ignoramos a nuestro propio riesgo.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Acerca del autor
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>Andrew Ross Sorkin</strong> es un periodista galardonado de The New York Times y copresentador de Squawk Box , el programa matutino insignia de la CNBC. También es fundador y editor general de DealBook , un informe financiero diario en línea publicado por The New York Times , que él mismo fundó en 2001. Sorkin es el autor del éxito de ventas Too Big to Fail y coproductor de la adaptación cinematográfica de 2011, nominada a once premios Emmy. Sorkin también es cocreador de la serie dramática Billions de Showtime.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Detalles del producto
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>Editorial:</strong> Viking (14 de octubre de 2025)<br>
+                                            <strong>Idioma:</strong> Español<br>
+                                            <strong>Tapa dura:</strong> 400 páginas<br>
+                                            <strong>ISBN-10 ‏:</strong> ‎ 0593296966<br>
+                                            <strong>ISBN-13 ‏:</strong> ‎ 978-0593296967<br>
+                                            <strong>Peso del artículo:</strong> 1,28 libras<br><br>
+                                            • Puesto n.° 29 102 en la lista de los más vendidos<br>
+                                            • #17 en Bancos y Banca (Libros)<br>
+                                            • #82 en Historia Económica (Libros)<br>
+                                            • #539 en Historia de los Estados Unidos (Libros)<br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-grid pt-3">
+                                <a href="carrito.html" class="btn btn-dark d-inline-flex align-items-center justify-content-center">
+                                    Agregar al carrito
+                                    <i class="bi bi-cart-fill ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<hr>
+
+<! Productos relacionados-->
+<div class="pt-4 pb-4 mt-0">
+    <div class="container mt-4 mb-4">
+        <h2 class="display-5 text-center mb-4 text-dark"><strong>Productos relacionados</strong></h2>
+        <div class="row row-cols-1 row-cols-md-4 row-cols-lg-5 g-4 mt-4">
+            <div class="col">
+                <div class="card rounded mx-4 mx-md-0" style="border-color: #9E9E9E;">
+                    <img src="imagenes/catalogo-los-miserables.jpg" class="img-fluid rounded-top" alt="Image">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title m-0"><strong>Los miserables</strong></h5>
+                            <a href="404.html" class=""><i class="bi bi-heart text-dark"></i></a>
+                        </div>
+                        <h5 class="card-title">$89.000</h5>
+                        <div class="mt-3 d-sm-flex gap-sm-2">
+                            <a href="404.html" class="btn btn-outline-dark w-100 w-sm-auto">Ver detalle</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card rounded mx-4 mx-md-0" style="border-color: #9E9E9E;">
+                    <img src="imagenes/catalogo-habitos-atomicos.jpg" class="img-fluid rounded-top" alt="Image">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title m-0"><strong>Hábitos atómicos</strong></h5>
+                            <a href="404.html" class=""><i class="bi bi-heart text-dark"></i></a>
+                        </div>
+                        <h5 class="card-title">$38.000</h5>
+                        <div class="mt-3 d-sm-flex gap-sm-2">
+                            <a href="404.html" class="btn btn-outline-dark w-100 w-sm-auto">Ver detalle</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card rounded mx-4 mx-md-0" style="border-color: #9E9E9E;">
+                    <img src="imagenes/novedades-nexus.jpg" class="img-fluid rounded-top" alt="Image">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title m-0"><strong>Nexus</strong></h5>
+                            <a href="404.html" class=""><i class="bi bi-heart text-dark"></i></a>
+                        </div>
+                        <h5 class="card-title">$65.000</h5>
+                        <div class="mt-3 d-sm-flex gap-sm-2">
+                            <a href="404.html" class="btn btn-outline-dark w-100 w-sm-auto">Ver detalle</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<! Reseñas de interés -->
+<div class="pt-1 pb-3 mt-0" style="background-color: black;">
+    <div class="container py-5">
+        <h3 class="display-6 text-center mb-4 text-white d-none d-md-block">Reseñas de interés</h3>
+        <h3 class="text-center mb-4 text-white d-block d-md-none">Reseñas de interés</h3>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col d-md-flex">
+                <div class="ratio ratio-16x9 w-100 mb-2 mb-md-0 me-md-2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qigGJpf3B9Q?si=a_cxskOQ787hTk3N&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col d-none d-md-flex">
+                <div class="ratio ratio-16x9 w-100 mb-2 mb-md-0 me-md-2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/t8FRb97CUZw?si=ci1TUslIKsz25Kxb&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col d-none d-md-flex">
+                <div class="ratio ratio-16x9 w-100">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jUK-VYCh5go?si=62xk4QueglpoyIPO&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<! Suscripción a Newlstter -->
+<div class="pt-1 pb-3 mt-0">
+    <div class="container py-5">
+        <h3 class="display-6 text-center mb-4 text-dark">Suscríbete a nuestro newsletter</h3>
+        <p class="text-center fs-6 mb-4">Recibe contenido interesante, descuentos especiales y las últimas noticias directamente en tu bandeja de entrada.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form class="d-flex" novalidate>
+                    <input type="email" class="form-control rounded-start" placeholder="Tu correo electrónico" aria-label="Tu correo electrónico" required>
+                    <button class="btn btn-dark rounded-end" type="submit">Suscribirme</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<! Footer -->
+<footer class="text-white pt-5 pb-4 mt-6" style="background-color: black;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3 text-center text-md-start mb-4 mb-md-0">
+                <a class="d-inline-flex align-items-center mb-2 text-body-secondary text-decoration-none">
+                    <img src="imagenes/nexus-logo-footer.png" alt="Bootstrap" width="70" height="70">
+                </a>
+            </div>
+            <div class="col-12 col-md-3 text-center mb-4 mb-md-0">
+                <h5 class="fs-6">De interés</h5>
+                <ul class="list-unstyled small">
+                    <li><a href="index.html" class="text-white" style="text-decoration: none;">Ver catálogo</a></li>
+                    <li><a href="404.html" class="text-white" style="text-decoration: none;">Blog</a></li>
+                    <li><a href="404.html" class="text-white" style="text-decoration: none;">Nuestras sedes</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3 text-center mb-4 mb-md-0">
+                <h5 class="fs-6">Contáctanos</h5>
+                <ul class="list-unstyled small">
+                    <li><a href="404.html" class="text-white" style="text-decoration: none;">Ayuda</a></li>
+                    <li><a href="404.html" class="text-white" style="text-decoration: none;">Donar libros</a></li>
+                    <li><a href="404.html" class="text-white" style="text-decoration: none;">Membresías</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3 text-center">
+                <h5 class="fs-6">Síguenos</h5>
+                <ul class="list-inline small">
+                    <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="text-center mb-2 fw-lighter small">© 2024 Librería Universitaria Nexus. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

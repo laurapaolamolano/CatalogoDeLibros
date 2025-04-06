@@ -156,8 +156,32 @@
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label " for="exampleCheck1">Acepto la <a href="#">política del manejo de datos</a></label>
                     </div>
+
+                    <! Pop up de envío exitoso -->
                     <div class="d-grid pt-3">
-                        <button type="submit" class="btn btn-dark">Enviar mi solicitud</button>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#miModal">
+                            Enviar mi solicitud
+                        </button>
+                    </div>
+
+                    <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="miModalLabel">Mensaje enviado</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Hemos recibido tu solicitud de manera exitosa. Pronto nos pondremos en contacto contigo.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    <a href="index.html" class="btn btn-primary">Volver a la tienda</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     </div>
                 </form>
             </div>
