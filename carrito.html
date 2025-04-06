@@ -109,18 +109,93 @@
     </div>
 </div>
 
-<! Mensaje de página no encontrada -->
+<! Contenido del carrito -->
 <div class="pt-3 pb-3 mt-0 px-3">
     <div class="container py-5">
-        <h1 class="text-center mb-3">¡Oh, no! </h1>
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-8 col-lg-6 text-center mb-4">
-                <img src="imagenes/error-404.png" class="img-fluid" alt="error 404">
-                <p class="fs-6 mb-0">Parece que andas perdido. Es probable que intentes encontrar páginas que no están disponibles o están en construcción. <strong>Haz clic en el botón para ir a una zona segura.</strong></p>
-            </div>
+        <h1 class="display-6 text-center mb-3 pb-4">Carrito de compras</h1>
+        <div class="row mb-3">
+            <div class="col text-center small"><strong>Carrito</strong></div>
+            <div class="col text-center small">Pago</div>
+            <div class="col text-center small">Confirmación</div>
         </div>
-        <div class="d-grid justify-content-center pt-3">
-            <button type="submit" class="btn btn-dark">Volver al inicio</button>
+        <div class="progress mb-3" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 12px;">
+            <div class="progress-bar" style="width: 33.3%; background-color: #FFEC7D;"></div>
+        </div>
+
+        <div class="mb-2 py-0">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="mb-3">
+                                    <table class="table">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col">Título</th>
+                                            <th scope="col">Precio</th>
+                                            <th scope="col">Cantidad</th>
+                                            <th scope="col">Subtotal</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td><img src="imagenes/carrito-1929.png" class="img-fluid rounded" style="max-width: 50px;" alt="Producto 1"></td>
+                                            <td>1929<br><em><small class="link-danger">Eliminar</small></em></td>
+                                            <td>$75.000</td>
+                                            <td>1</td>
+                                            <td>$75.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="imagenes/carrito-la-metamorfosis.png" class="img-fluid rounded" style="max-width: 50px;" alt="Producto 2"></td>
+                                            <td>La metamorfosis<br><em><small class="link-danger">Eliminar</small></em></td>
+                                            <td>$28.000</td>
+                                            <td>2</td>
+                                            <td>$56.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="imagenes/carrito-mark-twain.png" class="img-fluid rounded" style="max-width: 50px;" alt="Producto 3"></td>
+                                            <td>Mark Twain<br><em><small class="link-danger">Eliminar</small></em></td>
+                                            <td>$89.000</td>
+                                            <td>1</td>
+                                            <td>$89.000</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="d-md-flex justify-content-between align-items-center">
+                                        <div class="w-100 w-md-auto">
+                                            <div class="input-group input-group-sm mb-2">
+                                                <input type="text" class="form-control" placeholder="Código de cupón" aria-label="Código de descuento">
+                                                <button class="btn btn-outline-secondary" type="button">Aplicar cupón</button>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2 mt-md-0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title pb-3">Total del carrito</h4>
+                                        <dl class="row">
+                                            <dt class="col-6">Subtotal</dt>
+                                            <dd class="col-6">$229.000</dd>
+                                            <dt class="col-6">Total</dt>
+                                            <dd class="col-6"><strong>$310.000</strong><br><small style="color: #9E9E9E;">Incluyendo domicilio</small></dd>
+                                        </dl>
+                                        <div class="d-grid">
+                                            <button class="btn btn-dark">Ir al pago</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -138,7 +213,7 @@
                 <h5 class="fs-6">De interés</h5>
                 <ul class="list-unstyled small">
                     <li><a href="#" class="text-white" style="text-decoration: none;">Ver catálogo</a></li>
-                    <li><a href="#" class="text-white" style="text-decoration: none;">Newsletter</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Blog</a></li>
                     <li><a href="#" class="text-white" style="text-decoration: none;">Nuestras sedes</a></li>
                 </ul>
             </div>
